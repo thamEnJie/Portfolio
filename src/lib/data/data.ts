@@ -9,9 +9,9 @@ export enum ItemDisplayType {
     fullview,
 }
 
-interface Item {
+export interface Item {
     name: String;
-    caption: String;
+    caption?: String;
     desc: String;
     img?: captionedImage;
 }
@@ -19,7 +19,7 @@ interface Item {
 export const items: { [id: string]: Item; } = {
     "n": {
         name: "Name",
-        caption: "Caption",
+        caption: "caption",
         desc: "Desc",
     },
 }

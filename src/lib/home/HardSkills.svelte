@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Card, CardImg, CardSubtitle, CardText, Col, Row } from "@sveltestrap/sveltestrap";
+    import { Card, CardImg, CardSubtitle, CardText, CardTitle, Col, Icon, Row } from "@sveltestrap/sveltestrap";
     import { hardSkills } from "./homeData";
 </script>
 
@@ -8,7 +8,11 @@
     {#each hardSkills as skill}
         <Col xs="12" sm="6" md="3" class="my-2">
             <Card body class="h-100">
-                <!-- <CardImg /> -->
+                {#if skill.iconName == undefined}
+                    <CardImg top src="/src/assets/hardskills/{skill.title}.png" alt="{skill.title} app icon"/>
+                {:else}
+                    <Icon name={skill.iconName} />
+                {/if}
                 <CardSubtitle>{skill.title}</CardSubtitle>
                 <CardText>{skill.text}</CardText>
             </Card>

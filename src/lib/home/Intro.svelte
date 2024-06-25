@@ -1,12 +1,12 @@
 <script>
     import { Col, Image, Row } from "@sveltestrap/sveltestrap";
-    const pfp = "? PATH"
+    const src = "/src/assets/ultiphoto.png"
 </script>
 
 <div class="intro">
     <Row>
         <Col xs="12" sm="4">
-            <Image alt="Image of Tham En Jie" src={pfp} fluid />
+            <Image {src} alt="Image of Tham En Jie" fluid />
         </Col>
         <Col xs="12" sm="8">
             <p>

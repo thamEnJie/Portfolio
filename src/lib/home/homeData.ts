@@ -72,6 +72,7 @@ export const interests: Interest[] = [
 export interface HardSkill {
     title: string;
     text: string;
+    iconName?: string;
 }
 
 export const hardSkills: HardSkill[] = [
@@ -84,8 +85,8 @@ export const hardSkills: HardSkill[] = [
         text: "with Swift",
     },
     {
-        title: "CAD Modelling",
-        text: "Precision Models",
+        title: "OnShape",
+        text: "CAD Modelling",
     },
     {
         title: "Blender",
@@ -102,10 +103,12 @@ export const hardSkills: HardSkill[] = [
     {
         title: "Photography",
         text: "(Framing)",
+        iconName: "camera",
     },
     {
         title: "Electronics",
         text: "(O’Levels Standard)",
+        iconName: "lightning",
     },
 ]
 

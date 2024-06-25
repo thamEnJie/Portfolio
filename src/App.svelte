@@ -1,7 +1,7 @@
 <script lang="ts">
   import Home from "./lib/Home/Home.svelte";
 
-  export let title:string = "En Jie's Portfolio"
+  export let title:string = "En Jie's Portfolio";
 </script>
 
 <svelte:head>

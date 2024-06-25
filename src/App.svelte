@@ -1,7 +1,7 @@
 <script lang="ts">
-  // import Home from "./lib/Home/Home.svelte"
+  import Home from "./lib/Home/Home.svelte";
 
-  // export let title:string = "En Jie's Portfolio"
+  export let title:string = "En Jie's Portfolio"
 </script>
 
 <svelte:head>
@@ -9,7 +9,7 @@
 </svelte:head>
 
 
-<!-- <head><title>{title}</title></head> -->
+<head><title>{title}</title></head>
 
 
 <!-- <header>
@@ -18,7 +18,7 @@
 <!-- This is just a quick run down of all the content, and will be transformed later on. -->
 <!-- TODO: Implement Tags -->
 <main>
-  <p>Apologies, error in website build from vercel.</p>
+  <Home />
 </main>
 <!-- <footer>
 <p>footer</p>

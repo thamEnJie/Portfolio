@@ -28,19 +28,19 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        height: 150px; /* Set a fixed height */
+        height: 150px;
     }
 
     .square-image {
-        width: auto;
-        height: 100%; /* Ensures the image fits the container and remains square */
+        width: 100%;
+        height: auto;
     }
 
     .icon-resize {
-        font-size: 4rem; /* Adjust the size as needed */
+        font-size: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 150px; /* Ensure the icon is vertically centered like images */
+        height: 150px;
     }
 </style>

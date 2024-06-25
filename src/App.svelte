@@ -1,8 +1,5 @@
 <script lang="ts">
-  import {
-    Styles,
-  } from "@sveltestrap/sveltestrap"
-  import HomePage from "./lib/Home/Home.svelte"
+  import Home from "./lib/Home/Home.svelte"
 
   export let title:string = "En Jie's Portfolio"
 </script>
@@ -21,7 +18,7 @@
 <!-- This is just a quick run down of all the content, and will be transformed later on. -->
 <!-- TODO: Implement Tags -->
 <main>
-  <HomePage />
+  <Home />
 </main>
 <!-- <footer>
 <p>footer</p>

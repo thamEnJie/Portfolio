@@ -1,5 +1,6 @@
-<script>
-  import Home from "./lib/Home/Home.svelte";
+<script lang="ts">
+    import Home from "./lib/Home/Home.svelte";
+
 
   export let title = "En Jie's Portfolio";
 </script>

@@ -9,11 +9,11 @@
         <Col xs="12" sm="6" md="3" class="my-2">
             <Card body class="h-100">
                 {#if skill.iconName == undefined}
-                    <div class="image-container">
-                        <CardImg top src="/assets/hardskills/{skill.title}.png" alt="{skill.title} app icon" class="square-image" />
+                    <div class={skill.pad}>
+                        <CardImg top src="/src/assets/hardskills/{skill.title}.png" alt="{skill.title} app icon" class="image-square" />
                     </div>
                 {:else}
-                    <Icon name={skill.iconName} class="icon-resize" />
+                    <Icon name={skill.iconName} />
                 {/if}
                 <CardSubtitle>{skill.title}</CardSubtitle>
                 <CardText>{skill.text}</CardText>
@@ -21,26 +21,3 @@
         </Col>
     {/each}
 </Row>
-
-<style>
-    .image-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        height: 150px;
-    }
-
-    .square-image {
-        width: 100%;
-        height: auto;
-    }
-
-    .icon-resize {
-        font-size: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 150px;
-    }
-</style>

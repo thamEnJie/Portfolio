@@ -10,7 +10,7 @@
             <Card body class="h-100">
                 {#if skill.iconName == undefined}
                     <div class="image-container">
-                        <CardImg top src="public/hardskills/{skill.title}.png" alt="{skill.title} app icon public/hardskills/{skill.title}.png" class="square-image" />
+                        <CardImg top src="/public/hardskills/{skill.title}.png" alt="{skill.title} app icon" class="square-image" />
                     </div>
                 {:else}
                     <Icon name={skill.iconName} class="icon-resize" />

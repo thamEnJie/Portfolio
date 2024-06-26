@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Home from "./lib/Home/Home.svelte";
+  import Home from "./lib/home/home.svelte";
 
 
   export let title = "En Jie's Portfolio";

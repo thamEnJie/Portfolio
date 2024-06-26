@@ -1,6 +1,6 @@
 <script>
     import { Col, Image, Row } from "@sveltestrap/sveltestrap";
-    const src = "/src/assets/ultiphoto.png"
+    const src = "/public/ultiphoto.png"
 </script>
 
 <div class="intro">

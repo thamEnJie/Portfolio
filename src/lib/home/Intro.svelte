@@ -1,9 +1,9 @@
 <script>
     import { Col, Image, Row } from "@sveltestrap/sveltestrap";
-    const src = "/src/assets/ultiphoto.png"
+    const src = "assets/ultiphoto.png"
 </script>
 
-<div class="intro">
+<div>
     <Row>
         <Col xs="12" sm="4">
             <Image {src} alt="Image of Tham En Jie" fluid />
@@ -27,9 +27,9 @@
     h1, p {
         text-align: left;
     }
-    div {
+    /* div {
         position: relative;
         height: 100vh;
         top:25vh;
-    }
+    } */
 </style>

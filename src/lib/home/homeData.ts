@@ -1,9 +1,14 @@
 import type { Item } from "../data/data"
 
+export interface ItemArray {
+    heading: string;
+    itemList: Item[]
+}
+
 export interface Interest {
-    title: String,
-    subtitle: String,
-    items: Item[],
+    title: string,
+    subtitle: string,
+    items: ItemArray[],
 }
 
 export const interests: Interest[] = [
@@ -12,12 +17,30 @@ export const interests: Interest[] = [
         subtitle: "How Things Work",
         items: [
             {
-                name: "Chemistry & Pure Sciences",
-                desc: "DESCRIPTION",
+                heading: "Mathematics, Chemistry & Pure Sciences",
+                itemList: [
+                    {
+                        name: "Abstract to Concrete",
+                        desc: "They bring such abstractness of our world into simpler, manipulatable, concrete understanding.",
+                    },
+                    {
+                        name: "Derivation & Extensiveness",
+                        desc: "They allow me to derive many other things in and out of the subject just by knowing key and core concepts.",
+                    },
+                ]
             },
             {
-                name: "Psychology and Sociology",
-                desc: "DESCRIPTION"
+                heading: "Psychology and Sociology",
+                itemList: [
+                    {
+                        name: "MindField",
+                        desc: "The reason I got interested in Psychology is from MindField, a Youtube Series by VSauce. It ",
+                    },
+                    {
+                        name: "Understanding People",
+                        desc: "DESC",
+                    },
+                ]
             },
         ]
     },
@@ -26,16 +49,30 @@ export const interests: Interest[] = [
         subtitle: "How To Make Things Work",
         items: [
             {
-                name: "Computing",
-                desc: "DESCRIPTION"
+                heading: "Computing",
+                itemList: [
+                            {
+                        name: "NAME",
+                        desc: "DESCRIPTION"
+                    },
+                    {
+                        name: "NAME",
+                        desc: "DESCRIPTION"
+                    },
+                ]
             },
             {
-                name: "Electronics",
-                desc: "DESCRIPTION"
-            },
-            {
-                name: "Engineering",
-                desc: "DESCRIPTION"
+                heading: "Engineering",
+                itemList: [
+                            {
+                        name: "NAME",
+                        desc: "DESCRIPTION"
+                    },
+                    {
+                        name: "NAME",
+                        desc: "DESCRIPTION"
+                    },
+                ],
             },
         ]
     },
@@ -44,12 +81,30 @@ export const interests: Interest[] = [
         subtitle: "Ideas to Reality",
         items: [
             {
-                name: "Scientific Research",
-                desc: "DESCRIPTION"
+                heading: "Scientific Research",
+                itemList: [
+                            {
+                        name: "NAME",
+                        desc: "DESCRIPTION"
+                    },
+                    {
+                        name: "NAME",
+                        desc: "DESCRIPTION"
+                    },
+                ]
             },
             {
-                name: "Creation with Projects",
-                desc: "DESCRIPTION"
+                heading: "Creation with Projects",
+                itemList: [
+                            {
+                        name: "NAME",
+                        desc: "DESCRIPTION"
+                    },
+                    {
+                        name: "NAME",
+                        desc: "DESCRIPTION"
+                    },
+                ],
             },
         ]
     },
@@ -58,12 +113,30 @@ export const interests: Interest[] = [
         subtitle: "Reality to Ideals",
         items: [
             {
-                name: "Ecology",
-                desc: "DESCRIPTION"
+                heading: "Ecology",
+                itemList: [
+                            {
+                        name: "NAME",
+                        desc: "DESCRIPTION"
+                    },
+                    {
+                        name: "NAME",
+                        desc: "DESCRIPTION"
+                    },
+                ]
             },
             {
-                name: "People & Community",
-                desc: "DESCRIPTION"
+                heading: "People & Community",
+                itemList: [
+                            {
+                        name: "NAME",
+                        desc: "DESCRIPTION"
+                    },
+                    {
+                        name: "NAME",
+                        desc: "DESCRIPTION"
+                    },
+                ],
             },
         ]
     },

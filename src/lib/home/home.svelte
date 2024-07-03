@@ -9,7 +9,7 @@
 
   const sections = [Interests, HardSkills, SoftSkills, Showcase]
 </script>
-
+x
 <Container>
   <Col>
     <Intro />

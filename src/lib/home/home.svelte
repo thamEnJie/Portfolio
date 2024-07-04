@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Col, Container, Row } from "@sveltestrap/sveltestrap"
+  import { Col, Container } from "@sveltestrap/sveltestrap"
 
   import Intro from "./Intro.svelte";
   import Interests from "./Interests.svelte";
@@ -9,7 +9,7 @@
 
   const sections = [Interests, HardSkills, SoftSkills, Showcase]
 </script>
-x
+
 <Container>
   <Col>
     <Intro />

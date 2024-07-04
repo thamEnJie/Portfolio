@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { Icon } from "@sveltestrap/sveltestrap";
   import Home from "./lib/home/home.svelte";
 
 
@@ -16,7 +15,6 @@
 <!-- This is just a quick run down of all the content, and will be transformed later on. -->
 <!-- TODO: Implement Tags -->
 <main>
-  <Icon name="globe2"/>
   <Home />
 </main>
 <!-- <footer>

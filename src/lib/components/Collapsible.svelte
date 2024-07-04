@@ -1,7 +1,7 @@
 <script lang="ts">
     import { Button, Col } from "@sveltestrap/sveltestrap";
 
-    let isOpen = true;
+    let isOpen = false;
 
     function toggle() {
         isOpen = !isOpen;
@@ -9,11 +9,25 @@
 </script>
 
 <Col>
-    <div on:click={toggle}>
+    <button on:click={toggle} class="">
         <slot name="header" />
-    </div>
+    </button>
     
     {#if isOpen}
         <slot name="body" />
     {/if}
 </Col>
+
+<style>
+    button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    float: none;
+    overflow: hidden;
+}
+</style>

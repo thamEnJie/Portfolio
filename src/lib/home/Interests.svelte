@@ -9,21 +9,20 @@
 <Row>
     <h2 class="mb-3">Interest</h2>
     {#each interests as interest}
-        <Col sm="12" md = "6" class="my-3">
+        <Col sm="12" md = "6">
             <Collapsible>
                 <span slot="header">
                     <CardTitle><u><b>{interest.title}</b></u></CardTitle>
                     <small>{interest.subtitle}</small>
                 </span>
                 <span slot="body">
-                    <hr>
                     {#each interest.items as item}
                         <Collapsible>
                             <span slot="header">
-                                <CardSubtitle class="mb-4"><u>{item.heading}</u></CardSubtitle>
+                                <CardSubtitle><u>{item.heading}</u></CardSubtitle>
                             </span>
                             <span slot="body">
-                                <CardBody class="px-3 mx-5">
+                                <CardBody>
                                     {#each item.itemList as i}
                                         <b>{i.name}</b>
                                         <p>{i.desc}</p>

@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { Button, Col } from "@sveltestrap/sveltestrap";
 
     let isOpen = false;
 
@@ -8,26 +7,37 @@
     }
 </script>
 
-<Col>
-    <button on:click={toggle} class="">
-        <slot name="header" />
-    </button>
-    
+<div class="border rounded m-3">
+    <div role="button" tabindex="0" class="button flex select-none pr-6 py-3" on:click={toggle}>
+        <span class="mx-auto pl-9">
+            <slot name="header" />
+        </span>
+        <span class="my-auto transition {isOpen? '-rotate-90':'rotate-90'}">
+            >
+        </span>
+    </div>
     {#if isOpen}
-        <slot name="body" />
+        <hr class="mx-0 mt-0">
+        <div class="px-2 my-4">
+            <slot name="body" />
+        </div>
     {/if}
-</Col>
+</div>
 
 <style>
-    button {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    float: none;
-    overflow: hidden;
-}
+    .normButton {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        float: none;
+        overflow: hidden;
+    }
+    .collapsible-content {
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
 </style>

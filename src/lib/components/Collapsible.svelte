@@ -1,9 +1,13 @@
 <script lang="ts">
+    import { createEventDispatcher } from "svelte";
 
-    let isOpen = false;
 
+    export let isOpen = false;
+
+    const dispatch = createEventDispatcher();
     function toggle() {
         isOpen = !isOpen;
+        dispatch('toggle', { state: isOpen });
     }
 </script>
 
@@ -18,26 +22,11 @@
     </div>
     {#if isOpen}
         <hr class="mx-0 mt-0">
-        <div class="px-2 my-4">
+        <div class="px-2 my-4 transition">
             <slot name="body" />
         </div>
     {/if}
 </div>
 
 <style>
-    .normButton {
-        background: none;
-        color: inherit;
-        border: none;
-        padding: 0;
-        font: inherit;
-        cursor: pointer;
-        outline: inherit;
-        float: none;
-        overflow: hidden;
-    }
-    .collapsible-content {
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
 </style>

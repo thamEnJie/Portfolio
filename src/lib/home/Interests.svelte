@@ -3,12 +3,14 @@
     import { interests } from "./homeData"
     import Collapsible from "../components/Collapsible.svelte";
 
-    let openIndex = -1
+    let priOpenIndex = -1
+    let secOpenIndex = 0
     function handleToggle(event: CustomEvent, i:number) {
         if (event.detail.state) {
-            openIndex = i
+            priOpenIndex = i
+            secOpenIndex = 0
         } else {
-            openIndex = -1
+            priOpenIndex = -1
         }
     }
     function createToggleHandler(i:number) {
@@ -20,14 +22,14 @@
     <h2 class="mb-3">Interest</h2>
     {#each interests as interest, i}
         <Col sm="12" md = "6">
-            <Collapsible on:toggle={createToggleHandler(i)} isOpen={i == openIndex}>
+            <Collapsible on:toggle={createToggleHandler(i)} isOpen={i == priOpenIndex}>
                 <span slot="header">
                     <CardTitle><u><b>{interest.title}</b></u></CardTitle>
                     <small>{interest.subtitle}</small>
                 </span>
                 <span slot="body">
-                    {#each interest.items as item}
-                        <Collapsible>
+                    {#each interest.items as item, j}
+                        <Collapsible isOpen={j == secOpenIndex}>
                             <span slot="header">
                                 <CardSubtitle><u>{item.heading}</u></CardSubtitle>
                             </span>

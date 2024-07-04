@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { CardBody, CardSubtitle, CardTitle, Col, Row } from "@sveltestrap/sveltestrap";
+    import { CardBody, CardSubtitle, CardTitle } from "@sveltestrap/sveltestrap";
     import { interests } from "./homeData"
     import Collapsible from "../components/Collapsible.svelte";
 
@@ -18,10 +18,10 @@
     }
 </script>
 
-<Row>
+<section>
     <h2 class="mb-3">Interest</h2>
-    {#each interests as interest, i}
-        <Col sm="12" md = "6">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2">
+        {#each interests as interest, i}
             <Collapsible on:toggle={createToggleHandler(i)} isOpen={i == priOpenIndex}>
                 <span slot="header">
                     <CardTitle><u><b>{interest.title}</b></u></CardTitle>
@@ -45,6 +45,6 @@
                     {/each}
                 </span>
             </Collapsible>
-        </Col>
     {/each}
-</Row>
+    </div>
+</section>

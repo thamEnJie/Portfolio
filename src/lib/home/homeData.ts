@@ -33,12 +33,12 @@ export const interests: Interest[] = [
                 heading: "Psychology and Sociology",
                 itemList: [
                     {
-                        name: "MindField",
-                        desc: "The reason I got interested in Psychology is from MindField, a Youtube Series by VSauce. It ",
+                        name: "Understanding People",
+                        desc: "Understanding Pyschology allows me to better work with people by being able to understand why people do certain things.",
                     },
                     {
-                        name: "Understanding People",
-                        desc: "DESC",
+                        name: "MindField",
+                        desc: "The reason I got into Psychology is from MindField, a Youtube Series by VSauce. It opened me to new ideas on how people can have such diverse minds.",
                     },
                 ]
             },
@@ -49,97 +49,97 @@ export const interests: Interest[] = [
         subtitle: "How To Make Things Work",
         items: [
             {
-                heading: "Computing",
+                heading: "Product Creation",
                 itemList: [
-                            {
-                        name: "NAME",
-                        desc: "DESCRIPTION"
+                    {
+                        name: "Creation through Projects",
+                        desc: "I love to generate solutions in my mind, but I also love the process of bringing these ideas to reality. Which is why I have multiple personal projects!"
                     },
                     {
-                        name: "NAME",
-                        desc: "DESCRIPTION"
-                    },
-                ]
-            },
-            {
-                heading: "Engineering",
-                itemList: [
-                            {
-                        name: "NAME",
-                        desc: "DESCRIPTION"
-                    },
-                    {
-                        name: "NAME",
-                        desc: "DESCRIPTION"
+                        name: "Problem Solving",
+                        desc: "When I watch videos and view resources on making products, I am amazed by the smart and efficient ways they reach a solution, and is something I find satisfying."
                     },
                 ],
             },
-        ]
-    },
-    {
-        title: "Development",
-        subtitle: "Ideas to Reality",
-        items: [
             {
-                heading: "Scientific Research",
+                heading: "Computing & Electronics",
                 itemList: [
                             {
-                        name: "NAME",
-                        desc: "DESCRIPTION"
+                        name: "Self-Learning Computing",
+                        desc: "The accesible and quick nature of computing is very conducive for self-learning! I've taught myself python for various applications, and svelte here just to learn web-development and make this website!"
                     },
                     {
-                        name: "NAME",
-                        desc: "DESCRIPTION"
+                        name: "Electronics",
+                        desc: "The hardware part of technology, it's very fun to be able to link it to my chemistry knowledge! I have taken Electronics in SST as an Applied Subject."
                     },
                 ]
             },
-            {
-                heading: "Creation with Projects",
-                itemList: [
-                            {
-                        name: "NAME",
-                        desc: "DESCRIPTION"
-                    },
-                    {
-                        name: "NAME",
-                        desc: "DESCRIPTION"
-                    },
-                ],
-            },
         ]
     },
-    {
-        title: "Impact",
-        subtitle: "Reality to Ideals",
-        items: [
-            {
-                heading: "Ecology",
-                itemList: [
-                            {
-                        name: "NAME",
-                        desc: "DESCRIPTION"
-                    },
-                    {
-                        name: "NAME",
-                        desc: "DESCRIPTION"
-                    },
-                ]
-            },
-            {
-                heading: "People & Community",
-                itemList: [
-                            {
-                        name: "NAME",
-                        desc: "DESCRIPTION"
-                    },
-                    {
-                        name: "NAME",
-                        desc: "DESCRIPTION"
-                    },
-                ],
-            },
-        ]
-    },
+    // {
+    //     title: "Learning",
+    //     subtitle: "Reality to Ideas",
+    //     items: [
+    //         {
+    //             heading: "XXX",
+    //             itemList: [
+    //                         {
+    //                     name: "NAME",
+    //                     desc: "DESCRIPTION"
+    //                 },
+    //                 {
+    //                     name: "NAME",
+    //                     desc: "DESCRIPTION"
+    //                 },
+    //             ]
+    //         },
+    //         {
+    //             heading: "XXX",
+    //             itemList: [
+    //                         {
+    //                     name: "NAME",
+    //                     desc: "DESCRIPTION"
+    //                 },
+    //                 {
+    //                     name: "NAME",
+    //                     desc: "DESCRIPTION"
+    //                 },
+    //             ],
+    //         },
+    //     ]
+    // },
+    // {
+    //     title: "Impact",
+    //     subtitle: "Reality to Ideals",
+    //     items: [
+    //         {
+    //             heading: "Ecology",
+    //             itemList: [
+    //                         {
+    //                     name: "NAME",
+    //                     desc: "DESCRIPTION"
+    //                 },
+    //                 {
+    //                     name: "NAME",
+    //                     desc: "DESCRIPTION"
+    //                 },
+    //             ]
+    //         },
+    //         {
+    //             heading: "People & Community",
+    //             itemList: [
+    //                         {
+    //                     name: "NAME",
+    //                     desc: "DESCRIPTION"
+    //                 },
+    //                 {
+    //                     name: "NAME",
+    //                     desc: "DESCRIPTION"
+    //                 },
+    //             ],
+    //         },
+    //     ]
+    // },
 ]
 
 export interface HardSkill {

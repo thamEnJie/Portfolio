@@ -145,52 +145,32 @@ export const interests: Interest[] = [
 export interface HardSkill {
     title: string;
     text: string;
-    iconName?: string;
-    pad: string;
 }
 
 export const hardSkills: HardSkill[] = [
     {
         title: "Python",
         text: "Programming",
-        pad: "px-2 py-4",
     },
     {
         title: "SwiftUI",
         text: "with Swift",
-        pad: "py-3",
-    },
-    {
-        title: "OnShape",
-        text: "CAD Modelling",
-        pad: "py-3",
-    },
-    {
-        title: "Blender",
-        text: "Mesh Modelling & Shading",
-        pad: "px-3 py-5",
     },
     {
         title: "Svelte",
         text: "with Typescript",
-        pad: "px-3",
+    },
+    {
+        title: "OnShape",
+        text: "CAD Modelling",
+    },
+    {
+        title: "Blender",
+        text: "Mesh Modelling",
     },
     {
         title: "Figma",
         text: "Interface Design",
-        pad: "px-5 py-3",
-    },
-    {
-        title: "Photography",
-        text: "(Framing)",
-        iconName: "camera",
-        pad: "",
-    },
-    {
-        title: "Electronics",
-        text: "(O’Levels Standard)",
-        iconName: "lightning",
-        pad: "",
     },
 ]
 

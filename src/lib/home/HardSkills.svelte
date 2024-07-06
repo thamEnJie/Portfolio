@@ -3,21 +3,16 @@
     import { hardSkills } from "./homeData";
 </script>
 
-<h2 class="mb-3">Hard Skills</h2>
-<Row>
+<h2 class="mb-3">Programming & Design Toolkit</h2>
+<div class="grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
     {#each hardSkills as skill}
-        <Col xs="12" sm="6" md="3" class="my-2">
-            <Card body class="h-100">
-                {#if skill.iconName == undefined}
-                    <div class={skill.pad}>
-                        <CardImg top src="assets/hardskills/{skill.title}.png" alt="{skill.title} app icon" class="image-square" />
-                    </div>
-                {:else}
-                    <Icon name={skill.iconName} />
-                {/if}
-                <CardSubtitle>{skill.title}</CardSubtitle>
-                <CardText>{skill.text}</CardText>
-            </Card>
-        </Col>
+        <div class="border rounded shadow py-4">
+            <img src="assets/hardskills/{skill.title}.png" class="object-contain h-24 w-24 mb-4" alt="{skill.title} app icon" />
+            <p class="my-0">
+                <b><u>{skill.title}</u></b>
+                <br>
+                {skill.text}
+            </p>
+        </div>
     {/each}
-</Row>
+    </div>

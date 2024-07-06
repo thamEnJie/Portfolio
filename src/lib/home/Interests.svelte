@@ -18,9 +18,9 @@
 
 <section>
     <h2 class="mb-3">Interest</h2>
-    <div class="grid md:grid-cols-1 lg:grid-cols-2">
+    <div class="grid gap-4 md:grid-cols-1 lg:grid-cols-2">
         {#each interests as interest, i}
-            <div class="border p-3 mx-3">
+            <div class="border p-3">
                 <span class="flex flex-row justify-center items-center gap-4">
                     <span class="text-2xl">{interest.em1}</span>
                     <span>

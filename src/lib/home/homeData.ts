@@ -8,6 +8,8 @@ export interface ItemArray {
 export interface Interest {
     title: string,
     subtitle: string,
+    em1: string,
+    em2: string,
     items: ItemArray[],
 }
 
@@ -15,9 +17,11 @@ export const interests: Interest[] = [
     {
         title: "Sciences",
         subtitle: "How Things Work",
+        em1: "🔬⚛️",
+        em2: "⚛️🧪",
         items: [
             {
-                heading: "Mathematics, Chemistry & Pure Sciences",
+                heading: "Mathematics, Chemistry & Other Sciences",
                 itemList: [
                     {
                         name: "Abstract to Concrete",
@@ -42,11 +46,26 @@ export const interests: Interest[] = [
                     },
                 ]
             },
+            // {
+            //     heading: "Ecology & Nature",
+            //     itemList: [
+            //         {
+            //             name: "Understanding People",
+            //             desc: "Understanding Pyschology allows me to better work with people by being able to understand why people do certain things.",
+            //         },
+            //         {
+            //             name: "MindField",
+            //             desc: "The reason I got into Psychology is from MindField, a Youtube Series by VSauce. It opened me to new ideas on how people can have such diverse minds.",
+            //         },
+            //     ]
+            // },
         ]
     },
     {
         title: "Engineering",
         subtitle: "How To Make Things Work",
+        em1: "👨‍💻⚙️",
+        em2: "⚙️👨‍💻",
         items: [
             {
                 heading: "Product Creation",

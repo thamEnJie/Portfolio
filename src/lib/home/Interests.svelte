@@ -17,7 +17,7 @@
 </script>
 
 <section>
-    <h2 class="mb-3">Interest</h2>
+    <h2 class="mb-3">Learning Interests</h2>
     <div class="grid gap-4 md:grid-cols-1 lg:grid-cols-2">
         {#each interests as interest, i}
             <div class="border p-3">

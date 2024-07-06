@@ -4,7 +4,7 @@
 
 <div class="min-h-screen flex justify-center items-center pb-25">
     <div class="flex flex-row">
-        <img {src} class="row-span-1 rounded-10 h-45 my-auto ml-auto mr-2.5" alt="Image of Tham En Jie" />
+        <img {src} class="row-span-1 rounded-10 h-45 my-auto ml-auto mr-2.5" alt="Tham En Jie" />
         <div class="row-span-1 my-auto mr-auto ml-2.5">
             <p>
             <h1>Hi! I'm En Jie :)</h1>

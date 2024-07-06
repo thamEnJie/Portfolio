@@ -9,6 +9,8 @@
         isOpen = !isOpen;
         dispatch('toggle', { state: isOpen });
     }
+
+    const animation: string = "transition-all duration-500"
 </script>
 
 <div class="border rounded shadow-sm m-3">
@@ -16,16 +18,18 @@
         <span class="mx-auto pl-3">
             <slot name="header" />
         </span>
-        <span class="my-auto transition {isOpen? '-rotate-90':'rotate-90'}">
+        <span class="my-auto {animation} {isOpen? '-rotate-90':'rotate-90'} text-md font-bold">
             >
         </span>
     </button>
     {#if isOpen}
         <hr class="mx-0 mt-0">
-        <div class="px-15 my-4 transition">
-            <slot name="body" />
-        </div>
     {/if}
+        <div class="{animation} {isOpen ? "px-15 my-4" : ""}">
+            <div class="overflow-hidden {animation} max-h-{isOpen ? "screen":"0"}">
+                <slot name="body" />
+            </div>
+        </div>
 </div>
 
 <style>

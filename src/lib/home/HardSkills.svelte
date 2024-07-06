@@ -3,7 +3,7 @@
     import { hardSkills } from "./homeData";
 </script>
 
-<h2 class="mb-3">Programming & Design Toolkit</h2>
+<h2 class="mb-3">My Programming & Design Toolkit</h2>
 <div class="grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
     {#each hardSkills as skill}
         <div class="border rounded shadow py-4">

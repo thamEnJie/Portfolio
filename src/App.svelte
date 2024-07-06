@@ -1,6 +1,6 @@
 <script lang="ts">
   import Home from "./lib/home/home.svelte";
-
+  // import { NavBar } from "@sveltestrap/sveltestrap"
 
   export let title = "En Jie's Portfolio";
 </script>
@@ -9,9 +9,9 @@
 <head><title>{title}</title></head>
 
 
-<!-- <header>
-<p>navigation</p>
-</header> -->
+<!-- <nav>
+  <NavBar />
+</nav> -->
 <!-- This is just a quick run down of all the content, and will be transformed later on. -->
 <!-- TODO: Implement Tags -->
 <main>
@@ -20,8 +20,3 @@
 <!-- <footer>
 <p>footer</p>
 </footer> -->
-
-
-<style>
-  
-</style>

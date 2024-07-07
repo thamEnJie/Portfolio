@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { Card, CardImg, CardSubtitle, CardText, CardTitle, Col, Icon, Row } from "@sveltestrap/sveltestrap";
     import { hardSkills } from "./homeData";
 </script>
 

@@ -21,14 +21,14 @@
     <div class="grid gap-4 md:grid-cols-1 lg:grid-cols-2">
         {#each interests as interest, i}
             <div class="border p-3">
-                <span class="flex flex-row justify-center items-center gap-4">
+                <div class="flex flex-row justify-center items-center gap-4">
                     <span class="text-2xl">{interest.em1}</span>
                     <span>
                         <CardTitle><u><b>{interest.title}</b></u></CardTitle>
                         <small>{interest.subtitle}</small>
                     </span>
                     <span class="text-2xl">{interest.em2}</span>
-                </span>
+                </div>
                 <hr>
                 {#each interest.items as item, j}
                     <Collapsible on:toggle={createToggleHandler(i, j)} isOpen={j == openIndexes[i]}>

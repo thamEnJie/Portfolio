@@ -1,8 +1,8 @@
 <script lang="ts">
   export let title = "En Jie's Portfolio";
 
-  import NavBar from "./lib/NavBar.svelte";
-  import { base, pages } from "./lib/data/data";
+  import NavBar from "./lib/Navigation/NavBar.svelte";
+  import { base, pages } from "./lib/Navigation/navData";
   let currentRoute = window.location.pathname;
 </script>
 

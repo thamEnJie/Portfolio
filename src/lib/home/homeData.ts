@@ -1,4 +1,7 @@
-import type { Item } from "../data/data"
+export interface Item {
+    title: String;
+    text: String;
+}
 
 export interface ItemArray {
     heading: string;
@@ -24,12 +27,12 @@ export const interests: Interest[] = [
                 heading: "Mathematics, Chemistry & Other Sciences",
                 itemList: [
                     {
-                        name: "Abstract to Concrete",
-                        desc: "They bring such abstractness of our world into simpler, manipulatable, concrete understanding.",
+                        title: "Abstract to Concrete",
+                        text: "They bring such abstractness of our world into simpler, manipulatable, concrete understanding.",
                     },
                     {
-                        name: "Derivation & Extensiveness",
-                        desc: "They allow me to derive many other things in and out of the subject just by knowing key and core concepts.",
+                        title: "Derivation & Extensiveness",
+                        text: "They allow me to derive many other things in and out of the subject just by knowing key and core concepts.",
                     },
                 ]
             },
@@ -37,12 +40,12 @@ export const interests: Interest[] = [
                 heading: "Psychology and Sociology",
                 itemList: [
                     {
-                        name: "Understanding People",
-                        desc: "Understanding Pyschology allows me to better work with people by being able to understand why people do certain things.",
+                        title: "Understanding People",
+                        text: "Understanding Pyschology allows me to better work with people by being able to understand why people do certain things.",
                     },
                     {
-                        name: "MindField",
-                        desc: "The reason I got into Psychology is from MindField, a Youtube Series by VSauce. It opened me to new ideas on how people can have such diverse minds.",
+                        title: "MindField",
+                        text: "The reason I got into Psychology is from MindField, a Youtube Series by VSauce. It opened me to new ideas on how people can have such diverse minds.",
                     },
                 ]
             },
@@ -50,12 +53,12 @@ export const interests: Interest[] = [
             //     heading: "Ecology & Nature",
             //     itemList: [
             //         {
-            //             name: "Understanding People",
-            //             desc: "Understanding Pyschology allows me to better work with people by being able to understand why people do certain things.",
+            //             title: "Understanding People",
+            //             text: "Understanding Pyschology allows me to better work with people by being able to understand why people do certain things.",
             //         },
             //         {
-            //             name: "MindField",
-            //             desc: "The reason I got into Psychology is from MindField, a Youtube Series by VSauce. It opened me to new ideas on how people can have such diverse minds.",
+            //             title: "MindField",
+            //             text: "The reason I got into Psychology is from MindField, a Youtube Series by VSauce. It opened me to new ideas on how people can have such diverse minds.",
             //         },
             //     ]
             // },
@@ -71,12 +74,12 @@ export const interests: Interest[] = [
                 heading: "Product Creation",
                 itemList: [
                     {
-                        name: "Creation through Projects",
-                        desc: "I love to generate solutions in my mind, but I also love the process of bringing these ideas to reality. Which is why I have multiple personal projects!"
+                        title: "Creation through Projects",
+                        text: "I love to generate solutions in my mind, but I also love the process of bringing these ideas to reality. Which is why I have multiple personal projects!"
                     },
                     {
-                        name: "Problem Solving",
-                        desc: "When I watch videos and view resources on making products, I am amazed by the smart and efficient ways they reach a solution, and is something I find satisfying."
+                        title: "Problem Solving",
+                        text: "When I watch videos and view resources on making products, I am amazed by the smart and efficient ways they reach a solution, and is something I find satisfying."
                     },
                 ],
             },
@@ -84,12 +87,12 @@ export const interests: Interest[] = [
                 heading: "Computing & Electronics",
                 itemList: [
                             {
-                        name: "Self-Learning Computing",
-                        desc: "The accesible and quick nature of computing is very conducive for self-learning! I've taught myself python for various applications, and svelte here just to learn web-development and make this website!"
+                        title: "Self-Learning Computing",
+                        text: "The accesible and quick nature of computing is very conducive for self-learning! I've taught myself python for various applications, and svelte here just to learn web-development and make this website!"
                     },
                     {
-                        name: "Electronics",
-                        desc: "The hardware part of technology, it's very fun to be able to link it to my chemistry knowledge! I have taken Electronics in SST as an Applied Subject."
+                        title: "Electronics",
+                        text: "The hardware part of technology, it's very fun to be able to link it to my chemistry knowledge! I have taken Electronics in SST as an Applied Subject."
                     },
                 ]
             },
@@ -103,12 +106,12 @@ export const interests: Interest[] = [
     //             heading: "XXX",
     //             itemList: [
     //                         {
-    //                     name: "NAME",
-    //                     desc: "DESCRIPTION"
+    //                     title: "title",
+    //                     text: "textRIPTION"
     //                 },
     //                 {
-    //                     name: "NAME",
-    //                     desc: "DESCRIPTION"
+    //                     title: "title",
+    //                     text: "textRIPTION"
     //                 },
     //             ]
     //         },
@@ -116,12 +119,12 @@ export const interests: Interest[] = [
     //             heading: "XXX",
     //             itemList: [
     //                         {
-    //                     name: "NAME",
-    //                     desc: "DESCRIPTION"
+    //                     title: "title",
+    //                     text: "textRIPTION"
     //                 },
     //                 {
-    //                     name: "NAME",
-    //                     desc: "DESCRIPTION"
+    //                     title: "title",
+    //                     text: "textRIPTION"
     //                 },
     //             ],
     //         },
@@ -135,12 +138,12 @@ export const interests: Interest[] = [
     //             heading: "Ecology",
     //             itemList: [
     //                         {
-    //                     name: "NAME",
-    //                     desc: "DESCRIPTION"
+    //                     title: "title",
+    //                     text: "textRIPTION"
     //                 },
     //                 {
-    //                     name: "NAME",
-    //                     desc: "DESCRIPTION"
+    //                     title: "title",
+    //                     text: "textRIPTION"
     //                 },
     //             ]
     //         },
@@ -148,12 +151,12 @@ export const interests: Interest[] = [
     //             heading: "People & Community",
     //             itemList: [
     //                         {
-    //                     name: "NAME",
-    //                     desc: "DESCRIPTION"
+    //                     title: "title",
+    //                     text: "textRIPTION"
     //                 },
     //                 {
-    //                     name: "NAME",
-    //                     desc: "DESCRIPTION"
+    //                     title: "title",
+    //                     text: "textRIPTION"
     //                 },
     //             ],
     //         },
@@ -161,12 +164,7 @@ export const interests: Interest[] = [
     // },
 ]
 
-export interface HardSkill {
-    title: string;
-    text: string;
-}
-
-export const hardSkills: HardSkill[] = [
+export const hardSkills: Item[] = [
     {
         title: "Python",
         text: "Programming",

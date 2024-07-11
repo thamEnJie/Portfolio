@@ -38,8 +38,8 @@
                         <span slot="body">
                             <CardBody>
                                 {#each item.itemList as i}
-                                    <b>{i.name}</b>
-                                    <p>{i.desc}</p>
+                                    <b>{i.title}</b>
+                                    <p>{i.text}</p>
                                 {/each}
                             </CardBody>
                         </span>

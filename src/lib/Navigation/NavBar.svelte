@@ -5,7 +5,7 @@
 
     export let currentRoute:string;
 
-    import type { NavPage } from "./data/data";
+    import type { NavPage } from "./navData";
     export let pages: NavPage[];
 
     function navigate(route:string) {

@@ -25,8 +25,8 @@
     {#if isOpen}
         <hr class="mx-0 mt-0">
     {/if}
-        <div class="{animation} {isOpen ? "px-15 my-4" : ""}">
-            <div class="overflow-hidden {animation} {isOpen ? "max-h-screen":"max-h-0"}">
+    <div class="{animation} {isOpen ? "px-10 my-4" : ""}">
+    <div class="overflow-hidden {animation} {isOpen ? "max-h-screen":"max-h-0"}">
                 <slot name="body" />
             </div>
         </div>

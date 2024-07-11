@@ -14,7 +14,7 @@
 </script>
 
 <div class="border rounded shadow-sm m-3">
-    <button class="w-full h-full {isOpen ? "rounded-b-none" : "rounded-b-1"} rounded-t-1 flex pr-6 py-3 bg-transparent text-inherit" on:click={toggle}>
+    <button class="reset-btn w-full h-full {isOpen ? "rounded-b-none" : "rounded-b-1"} rounded-t-1 flex pr-6 py-3" on:click={toggle}>
         <span class="mx-auto pl-3">
             <slot name="header" />
         </span>
@@ -31,6 +31,3 @@
             </div>
         </div>
 </div>
-
-<style>
-</style>

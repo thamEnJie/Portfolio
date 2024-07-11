@@ -6,4 +6,10 @@ export default defineConfig({
     presets: [
         presetUno(),
     ],
+    rules: [
+        ['reset-btn', {
+            background: 'transparent',
+            color: 'inherit',
+        }]
+    ]
 })

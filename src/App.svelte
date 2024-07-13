@@ -3,22 +3,31 @@
 
   import NavBar from "./lib/Navigation/NavBar.svelte";
   import { base, pages } from "./lib/Navigation/navData";
-  let currentRoute = window.location.pathname;
+  let currentPath:string = window.location.pathname;
+  
+  let currentIndex: number;
+  function updateIndex(path:string): number {
+    let i = 0
+    for (const page of pages) {
+      if (path == base+page.pathName) {
+        return i;
+      }
+      i++;
+    }
+    return -1
+  }
+  $: currentIndex = updateIndex(currentPath);
 </script>
 
 
 <head><title>{title}</title></head>
 
 
-<NavBar bind:currentRoute={currentRoute} {pages} />
+<NavBar bind:currentPath={currentPath} bind:defaultHoverIndex={currentIndex} {pages} />
 <!-- This is just a quick run down of all the content, and will be transformed later on. -->
 <!-- TODO: Implement Tags -->
 <main class="px-10">
-  {#each pages as page}
-    {#if currentRoute == base+page.pathName}
-      <svelte:component this={page.component} />
-    {/if}
-  {/each}
+  <svelte:component this={pages[currentIndex].component} />
 </main>
 <!-- <footer>
 <p>footer</p>

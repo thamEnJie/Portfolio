@@ -2,26 +2,15 @@
     const src = "assets/ultiphoto.png"
     const base = "/Portfolio/"
 
-    export let currentRoute:string;
-    let defaultHoverIndex: number;
-    function getDefaultIndex(currPath: string):number {
-        let i = 0;
-        for (const page of pages) {
-            if (base+page.pathName == currPath) {
-                return i
-            }
-            i++
-        }
-        return -1
-    }; // optimize to remove this searching in the future?
-    $: defaultHoverIndex = getDefaultIndex(currentRoute);
+    export let currentPath:string;
+    export let defaultHoverIndex: number;
 
     import type { NavPage } from "./navData";
     export let pages: NavPage[];
 
     function navigate(route:string) {
         history.pushState({}, "", route)
-        currentRoute = route
+        currentPath = route
     }
 
     let titleWidths = new Array<number>(pages.length);

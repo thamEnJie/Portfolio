@@ -9,8 +9,10 @@
     export let pages: NavPage[];
 
     function navigate(route:string) {
-        history.pushState({}, "", route)
-        currentPath = route
+        if (route !== currentPath) {
+            history.pushState({}, "", route)
+            currentPath = route
+        }
     }
 
     let titleWidths = new Array<number>(pages.length);

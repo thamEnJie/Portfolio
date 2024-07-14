@@ -16,7 +16,8 @@
     }
 
     let titleWidths = new Array<number>(pages.length);
-    let hoverIndex = 0
+    let hoverIndex = defaultHoverIndex;
+    $: hoverIndex = defaultHoverIndex;
 </script>
 
 <nav class="fixed left-0 top-0 right-0 bg-yellow-300 z-2">

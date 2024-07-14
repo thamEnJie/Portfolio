@@ -36,8 +36,7 @@
                     </button>
                 {/each}
             </div>
-            <div
-            class="bg-black h-0.5 rounded-full bar-transition"
+            <span
             style={`width: ${titleWidths[hoverIndex]}px; transform: translateX(${titleWidths.slice(0, hoverIndex).reduce((acc, width) => acc + width, 0)}px)`}
             />
             <!-- <div class="my-0" /> {`w-${titleWidths[hoverIndex]}px`} {`ml-${titleWidths[hoverIndex]}px`} -->
@@ -53,7 +52,10 @@
     img {
         height: 9vh
     }
-    .bar-transition {
-      transition: width 0.175s ease-in-out, transform 0.175s ease-in-out;
+    span {
+        background-color: black;
+        height: 2.5px;
+        border-radius: 9999px;
+        transition: width 0.2s ease-in-out, transform 0.2s ease-in-out;
     }
 </style>

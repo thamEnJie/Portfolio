@@ -59,6 +59,6 @@
         background-color: black;
         height: 2.5px;
         border-radius: 9999px;
-        transition: width 0.35s ease-in-out, transform 0.35s ease-in-out;
+        transition: width 0.4s ease-in-out, transform 0.3s ease-in-out;
     }
 </style>

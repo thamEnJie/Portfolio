@@ -23,7 +23,7 @@
 <nav class="fixed left-0 top-0 right-0 bg-yellow-300 z-2">
     <div class="heightMod flex flex-row pt-sm px-sm justify-between">
         <img {src} class="rounded-full" alt="En Jie" />
-        <div class="my-auto flex flex-col">
+        <div class="flex flex-col">
             <div class="flex flex-row">
                 {#each pages as page, i}
                     <button
@@ -40,7 +40,7 @@
                 {/each}
             </div>
             <span
-            style={`width: ${titleWidths[hoverIndex]}px; transform: translateX(${titleWidths.slice(0, hoverIndex).reduce((acc, width) => acc + width, 0)}px)`}
+            style={`width: ${titleWidths[hoverIndex]*0.4}px; transform: translateX(${titleWidths.slice(0, hoverIndex).reduce((acc, width) => acc + width, 0) + titleWidths[hoverIndex]*0.3}px)`}
             />
         </div>
     </div>

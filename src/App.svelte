@@ -1,9 +1,16 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+
   export let title = "En Jie's Portfolio";
 
   import NavBar from "./lib/Navigation/NavBar.svelte";
   import { base, pages } from "./lib/Navigation/navData";
   let currentPath:string = window.location.pathname;
+  onMount(() => {
+    window.addEventListener('popstate', () => {
+      currentPath = window.location.pathname;
+    });
+  });
   
   let currentIndex: number;
   function updateIndex(path:string): number {

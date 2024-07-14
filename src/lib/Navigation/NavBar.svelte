@@ -42,7 +42,6 @@
             <span
             style={`width: ${titleWidths[hoverIndex]}px; transform: translateX(${titleWidths.slice(0, hoverIndex).reduce((acc, width) => acc + width, 0)}px)`}
             />
-            <!-- <div class="my-0" /> {`w-${titleWidths[hoverIndex]}px`} {`ml-${titleWidths[hoverIndex]}px`} -->
         </div>
     </div>
     <hr class="mx-sm mb-0 border-black">

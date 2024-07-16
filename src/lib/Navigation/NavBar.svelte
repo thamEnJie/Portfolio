@@ -20,41 +20,55 @@
     $: hoverIndex = defaultHoverIndex;
 </script>
 
-<nav class="fixed left-0 top-0 right-0 bg-yellow-300 z-2">
-    <div class="heightMod flex flex-row pt-sm px-sm justify-between">
-        <img {src} class="rounded-full" alt="En Jie" />
-        <div class="flex flex-col">
-            <div class="flex flex-row">
-                {#each pages as page, i}
-                    <button
-                    class="reset-btn text-lg font-bold border-0 transition-all"
-                    on:click|preventDefault={() => navigate(base+page.pathName)}
-                    bind:clientWidth={titleWidths[i]}
-                    on:mouseover={() => hoverIndex = i}
-                    on:mouseout={() => hoverIndex = defaultHoverIndex}
-                    on:focus={() => hoverIndex = i}
-                    on:blur={() => hoverIndex = defaultHoverIndex}
-                    >
-                        {page.title}
-                    </button>
-                {/each}
-            </div>
-            <span
-            style={`width: ${titleWidths[hoverIndex]*0.4}px; transform: translateX(${titleWidths.slice(0, hoverIndex).reduce((acc, width) => acc + width, 0) + titleWidths[hoverIndex]*0.3}px)`}
-            />
+<nav>
+    <img {src} class="rounded-full" alt="En Jie" />
+    <div class="flex flex-col">
+        <div class="flex flex-row z-1">
+            {#each pages as page, i}
+                <button
+                class="reset-btn text-lg font-bold border-0 transition-all"
+                on:click|preventDefault={() => navigate(base+page.pathName)}
+                bind:clientWidth={titleWidths[i]}
+                on:mouseover={() => hoverIndex = i}
+                on:mouseout={() => hoverIndex = defaultHoverIndex}
+                on:focus={() => hoverIndex = i}
+                on:blur={() => hoverIndex = defaultHoverIndex}
+                >
+                    {page.title}
+                </button>
+            {/each}
         </div>
+        <span
+        style={`width: ${titleWidths[hoverIndex]*0.4}px; transform: translateX(${titleWidths.slice(0, hoverIndex).reduce((acc, width) => acc + width, 0) + titleWidths[hoverIndex]*0.3}px)`}
+        />
     </div>
-    <hr class="mx-sm mb-0 border-black">
 </nav>
 
 <style>
-    .heightMod {
-      height: 10vh;
+    nav {
+      height: 12.5vh;
+      position: fixed;
+      inset: 0;
+      z-index: 2;
+      gap: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 1%;
+      padding-right: 1%;
+      background-color: #FAEE06;
+      border-bottom: dashed;
     }
     img {
-        height: 9vh
+        height: 10vh;
+        border-color: black;
+        border-style: inset;
     }
     span {
+        position: absolute;
+        bottom: 25%;
+        /* fix this */
         background-color: black;
         height: 2.5px;
         border-radius: 9999px;
